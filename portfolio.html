@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/portfolio.min.css" />
+    <link rel="stylesheet" href="./sass/utils/_fonts.scss" />
+  </head>
+
+  <body>
+    <!--Site header-->
+    <header class="page-header portfolio">
+      <div class="container main-nav">
+        <nav class="main-nav header">
+          <a href="./index.html" class="logo"
+            ><span class="logo-web">Web</span>Studio</a
+          >
+          <ul class="site-nav list">
+            <li class="item">
+              <a href="./index.html" class="link">Studio</a>
+            </li>
+            <li class="item">
+              <a href="./portfolio.html" class="link current">Portfolio</a>
+            </li>
+            <li class="item"><a href="" class="link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <!--Contacts-->
+        <ul class="contacts list">
+          <li class="item header-contacts">
+            <a class="btn-mail link" href="mailto:info@devstudio.com">
+              <svg class="button-icon" width="16" height="12">
+                <use href="./images/sprite.svg#envelope-icon"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="item header-contacts">
+            <a class="btn-phone link" href="tel:+380961111111"
+              ><svg class="button-icon" width="10" height="16">
+                <use href="./images/sprite.svg#phone-icon"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!--Portfolio-->
+      <section class="section">
+        <div class="container">
+          <h1 class="section-title non-visible">Portfolio</h1>
+          <ul class="portfolio-filters list">
+            <li class="item">
+              <button type="button" class="button">All</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Web sites</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Applications</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Design</button>
+            </li>
+            <li class="item">
+              <button type="button" class="button">Marketing</button>
+            </li>
+          </ul>
+
+          <ul class="portfolio-list list">
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-card.jpg"
+                    alt="People"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Technokryak</h2>
+                  <p class="portfolio-item">Web site</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-1.jpg"
+                    alt="Basketball players"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">
+                    New Orlean vs Golden Star poster
+                  </h2>
+                  <p class="portfolio-item">Design</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-2.jpg"
+                    alt="Restaurant logo"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Seafood Restaurant</h2>
+                  <p class="portfolio-item">Application</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-3.jpg"
+                    alt="Headphones"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Project Prime</h2>
+                  <p class="portfolio-item">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-4.jpg"
+                    alt="Boxes"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Project Boxes</h2>
+                  <p class="portfolio-item">Application</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-5.jpg"
+                    alt="Monitor"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Inspiration has no Borders</h2>
+                  <p class="portfolio-item">Web site</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-6.jpg"
+                    alt="Magazine"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Limited Edition</h2>
+                  <p class="portfolio-item">Design</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-7.jpg"
+                    alt="Label"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Project LAB</h2>
+                  <p class="portfolio-item">Marketing</p>
+                </div>
+              </a>
+            </li>
+
+            <li class="portfolio-card item">
+              <a class="portfolio-link" href="">
+                <div class="portfolio-thumb">
+                  <img
+                    src="./images/portfolio-8.jpg"
+                    alt="Laptop"
+                    width="370"
+                    height="294"
+                  />
+                  <p class="portfolio-description">
+                    Technokryak is a modern platform for the spread of
+                    coronavirus. Companies use this platform for digital
+                    espionage and attacks on competitors' secure servers.
+                  </p>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio-title">Growing Business</h2>
+                  <p class="portfolio-item">Application</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer class="page-footer">
+      <div class="container footer flexbox">
+        <div class="footer-info">
+          <a class="logo logo-footer" href="./index.html"
+            ><span class="logo-web">Web</span
+            ><span class="logo-white">Studio</span>
+          </a>
+
+          <address class="footer-address">
+            <p>Kiev, avenue Lesya Ukrainka, 26</p>
+            <ul class="list">
+              <li>
+                <a href="mailto:info@example.com" class="footer-contacts mail"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+380991111111" class="footer-contacts"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-join-us">
+          <b class="footer-title">Join us</b>
+          <ul class="list footer-links">
+            <li class="social-item">
+              <a class="footer-social" href="#" aria-label="Instagram Link">
+                <svg class="footer-icon" widht="20" height="20">
+                  <use href="./images/sprite.svg#footer-insta"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="footer-social" href="#" aria-label="Twitter Link">
+                <svg class="footer-icon" widht="20" height="16">
+                  <use href="./images/sprite.svg#footer-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="footer-social" href="#" aria-label="Facebook Link">
+                <svg class="footer-icon" widht="10" height="20">
+                  <use href="./images/sprite.svg#footer-fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-item">
+              <a class="footer-social" href="#" aria-label="LinkedIn Link">
+                <svg class="footer-icon" widht="20" height="20">
+                  <use href="./images/sprite.svg#footer-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-sign-up">
+          <b class="footer-title">Sign up for the newsletter</b>
+          <form class="footer-form">
+            <input
+              class="input-mail"
+              type="email"
+              name="footer-mail"
+              placeholder="E-mail"
+            />
+            <button class="btn submit-button" type="submit">
+              Subscribe
+              <svg class="submit-icon" height="24" width="24">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.logo {
+  color: $title-text-color;
+  font-family: $logo-font;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.19;
+  text-decoration: none;
+}
+
+.logo-web {
+  color: $accent-color;
+}
+
+.logo-footer {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.logo-white {
+  color: $white-color;
+}

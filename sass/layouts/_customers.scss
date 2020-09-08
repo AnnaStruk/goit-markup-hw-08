@@ -1,0 +1,28 @@
+/* Customers*/
+.customers {
+  @include flex-direct;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-link {
+  @include flex-direct;
+  cursor: pointer;
+  width: 170px;
+  height: 90px;
+
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+
+  transition: fill $time-anim, border-color $time-anim;
+
+  &:hover,
+  &:focus {
+    outline: 0;
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}

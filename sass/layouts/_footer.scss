@@ -1,0 +1,85 @@
+/* Footer*/
+.page-footer {
+  padding: 60px 0px;
+  background-color: $footer-bg-color;
+}
+
+.footer {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-title {
+  display: block;
+  margin-bottom: 20px;
+  color: $white-color;
+}
+
+.footer-info,
+.footer-join-us {
+  box-sizing: border-box;
+  width: 231px;
+}
+
+.footer-info {
+  margin-right: 69px;
+}
+
+.footer-sign-up {
+  margin-left: auto;
+}
+
+.submit-button {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  height: 50px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 40px;
+  outline: none;
+
+  transition: fill $time-anim, background-color $time-anim, color $time-anim;
+
+  &:hover .submit-icon,
+  &:focus .submit-icon {
+    fill: $accent-color;
+  }
+}
+
+.submit-icon {
+  margin-left: 10px;
+  fill: $white-color;
+  transition: fill $time-anim;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.input-mail {
+  box-sizing: border-box;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  padding: 15px;
+
+  font-size: 16px;
+  line-height: 1.25;
+  color: $accent-secondary-color;
+  align-items: center;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: inherit;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border: 1px solid $accent-color;
+  outline: 0;
+}

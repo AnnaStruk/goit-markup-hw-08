@@ -1,0 +1,21 @@
+.footer-address p {
+  margin-top: 0;
+  margin-bottom: 9px;
+
+  font-style: normal;
+  color: $white-color;
+}
+
+.footer-contacts {
+  display: block;
+  margin: 0;
+
+  font-style: normal;
+  text-decoration: none;
+  color: $accent-secondary-color;
+}
+
+.footer-contacts.mail {
+  margin-top: 0;
+  margin-bottom: 9px;
+}
