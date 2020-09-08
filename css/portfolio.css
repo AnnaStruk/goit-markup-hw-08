@@ -83,6 +83,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: 1px solid tomato;
 }
 
 .list {
@@ -97,6 +98,7 @@ html {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -130,14 +132,12 @@ img {
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: teal;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: tomato;
   }
 }
 
@@ -334,9 +334,7 @@ img {
 
 /* Site nav*/
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: 85px;
   margin-bottom: 0px;
 }
@@ -380,9 +378,7 @@ img {
 
 /* Contacts */
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
   margin-bottom: 0px;
 }
@@ -462,10 +458,6 @@ img {
 .icon-astronaut::before {
   background-image: url(../images/astronaut-icon.svg);
   background-size: 70px;
-}
-
-.features-description {
-  width: 270px;
 }
 
 /* Portfolio Button */

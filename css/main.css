@@ -83,6 +83,7 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  outline: 1px solid tomato;
 }
 
 .list {
@@ -97,6 +98,7 @@ html {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -130,14 +132,12 @@ img {
 @media (min-width: 480px) {
   .container {
     width: 480px;
-    background-color: teal;
   }
 }
 
 @media (min-width: 768px) {
   .container {
     width: 768px;
-    background-color: tomato;
   }
 }
 
@@ -259,9 +259,7 @@ img {
 
 /* Site nav*/
 .site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: 85px;
   margin-bottom: 0px;
 }
@@ -305,9 +303,7 @@ img {
 
 /* Contacts */
 .contacts {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
   margin-bottom: 0px;
 }
@@ -409,7 +405,7 @@ img {
 
 /* Hero */
 .hero {
-  padding-top: 200px;
+  height: 600px;
   background-color: #2f303a;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero.jpg);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
@@ -420,7 +416,7 @@ img {
   margin-top: 0;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
+  font-size: 26px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -482,10 +478,6 @@ img {
 .icon-astronaut::before {
   background-image: url(../images/astronaut-icon.svg);
   background-size: 70px;
-}
-
-.features-description {
-  width: 270px;
 }
 
 /* Works */
