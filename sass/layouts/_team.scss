@@ -1,8 +1,9 @@
 /* Team */
-.team {
+/*.team {
   display: flex;
   flex-wrap: wrap;
 }
+*/
 
 .team-name {
   margin-top: 30px;
@@ -20,8 +21,8 @@
 }
 
 .team .item {
-  width: calc((100% - 30px * 3) / 4);
-  align-items: center;
+  //width: calc((100% - 30px * 3) / 4);
+  //align-items: center;
 
   border: 1px;
   border-radius: 0px 0px 4px 4px;
@@ -29,9 +30,10 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
 
-  &:not(:last-child) {
+  /*&:not(:last-child) {
     margin-right: 30px;
   }
+  */
 }
 
 .team-position {

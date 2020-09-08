@@ -16,14 +16,15 @@
 
 body {
   margin: 0;
-  background-color: $white-color;
-  color: $primary-text-color;
-  font-family: $main-font;
-  letter-spacing: 0.03em;
   font-weight: 400;
   font-size: 14px;
+  font-family: $main-font;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   text-decoration: none;
+
+  color: $primary-text-color;
+  background-color: $white-color;
 }
 
 html {
@@ -51,12 +52,46 @@ img {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
-  margin: 0 auto;
+  margin-right: auto;
+  margin-left: auto;
+  /*margin: 0 auto;
+  */
+
+  @include for-size(tablet-portrait) {
+    width: 480px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+  }
 }
 
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    background-color: teal;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    background-color: tomato;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/*
 .content-box {
   display: flex;
 }
@@ -65,6 +100,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+*/
 
 .section {
   padding-top: 94px;
@@ -74,11 +110,13 @@ img {
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
-  color: $title-text-color;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  color: $title-text-color;
 }
 
 /* Main-nav*/

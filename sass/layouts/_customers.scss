@@ -1,10 +1,10 @@
 /* Customers*/
 .customers {
-  @include flex-direct;
+  // @include flex-direct;
 }
 
 .customers-item:not(:last-child) {
-  margin-right: 30px;
+  //margin-right: 30px;
 }
 
 .customers-link {

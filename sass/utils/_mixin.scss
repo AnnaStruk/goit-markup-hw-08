@@ -31,3 +31,11 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin font($width, $size, $height, $spacing) {
+  font-weight: $width;
+  font-size: $size;
+  line-height: $height;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: $spacing;
+}

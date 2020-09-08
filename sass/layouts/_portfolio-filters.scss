@@ -1,6 +1,6 @@
 /* Portfolio Button */
 .portfolio-filters {
-  @include flex-direct;
+  //@include flex-direct;
   margin-bottom: 50px;
 
   .item:not(:last-child) {
@@ -25,7 +25,6 @@
   background-color: $secondary-bg-color;
   text-align: center;
   border: transparent;
-  cursor: pointer;
 
   transition: color $time-anim, background-color $time-anim;
 
