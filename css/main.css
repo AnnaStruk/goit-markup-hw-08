@@ -129,47 +129,75 @@ img {
   }
 }
 
-@media (min-width: 480px) {
+/*
+@media screen and (min-width: 480px) {
   .container {
     width: 480px;
   }
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .container {
     width: 768px;
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
   }
 }
-
+*/
 /*
 .content-box {
   display: flex;
 }
-
-.flexbox {
-  display: flex;
-  flex-wrap: wrap;
-}
 */
+@media (min-width: 768px) {
+  .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0px;
+}
+
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section-title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
   color: #212121;
+}
+
+@media (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 /* Main-nav*/
@@ -439,15 +467,31 @@ img {
   color: #212121;
 }
 
-.features-list {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+@media (min-width: 768px) {
+  .features-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .features-block {
+    margin-right: 30px;
+  }
+  .features-block:nth-child(2n) {
+    margin-right: 0;
+  }
 }
 
 .features-list p {
   margin-top: 0;
   margin-bottom: 0px;
+}
+
+@media (min-width: 1200px) {
+  .features-block:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .features-block::before {
@@ -458,6 +502,18 @@ img {
   background-position: center;
   background-color: #f5f4fa;
   border-radius: 4px;
+}
+
+@media (min-width: 768px) {
+  .features-block::before {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-block::before {
+    width: 270px;
+  }
 }
 
 .features-block:nth-child(1)::before {
@@ -478,6 +534,18 @@ img {
 .icon-astronaut::before {
   background-image: url(../images/astronaut-icon.svg);
   background-size: 70px;
+}
+
+@media (min-width: 768px) {
+  .features-description {
+    width: 354px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .features-description {
+    width: 270px;
+  }
 }
 
 /* Works */
