@@ -5,8 +5,9 @@
 }
 
 .footer {
+  text-align: center;
   //display: flex;
-  align-items: baseline;
+  //align-items: baseline;
 }
 
 .footer-title {
@@ -17,6 +18,7 @@
 
 .footer-info,
 .footer-join-us {
+  margin-bottom: 60px;
   //box-sizing: border-box;
   //width: 231px;
 }
@@ -62,6 +64,8 @@
 .input-mail {
   box-sizing: border-box;
   margin-right: 12px;
+  margin-bottom: 20px;
+  width: 100%;
   //width: 358px;
   height: 50px;
   padding: 15px;
