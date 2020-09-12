@@ -532,13 +532,6 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .hero {
-    max-width: 768px;
-    width: 100%;
-  }
-}
-
 @media (min-width: 1200px) {
   .hero {
     margin-left: auto;
