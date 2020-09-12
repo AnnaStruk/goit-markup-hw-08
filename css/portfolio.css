@@ -102,7 +102,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -198,18 +198,6 @@ img {
     margin-bottom: 50px;
     font-size: 36px;
   }
-}
-
-/* Main-nav*/
-.main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 0px;
-  margin-bottom: 0;
 }
 
 .logo {
@@ -360,9 +348,22 @@ img {
   margin-left: 0;
 }
 
+/* Main-nav*/
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 63px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 /* Site nav*/
 .site-nav {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 85px;
   margin-bottom: 0px;
 }
@@ -406,7 +407,9 @@ img {
 
 /* Contacts */
 .contacts {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: auto;
   margin-bottom: 0px;
 }

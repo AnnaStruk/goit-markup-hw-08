@@ -55,7 +55,7 @@ img {
 }
 
 .container {
-  width: 100%;
+  max-width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-right: auto;
@@ -131,12 +131,4 @@ img {
     margin-bottom: 50px;
     font-size: 36px;
   }
-}
-
-/* Main-nav*/
-.main-nav {
-  display: flex;
-  align-items: center;
-  margin-top: 0px;
-  margin-bottom: 0;
 }
