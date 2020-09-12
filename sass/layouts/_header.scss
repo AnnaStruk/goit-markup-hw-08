@@ -1,17 +1,39 @@
-/* Main-nav*/
-.main-nav {
-  display: flex;
-  min-height: 63px;
-  align-items: center;
-  //margin-top: 0px;
-  //margin-bottom: 0;
+.menu-container {
+  display: none;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header .container {
+    display: flex;
+    align-items: center;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
 }
 
 /* Site nav*/
 .site-nav {
   display: flex;
-  margin-left: 85px;
   margin-bottom: 0px;
+
+  @include for-size(tablet-landscape) {
+    margin-left: 88px;
+  }
+  @include for-size(desktop) {
+    margin-left: 93px;
+  }
 }
 
 .site-nav .item {
@@ -56,9 +78,16 @@
 
 /* Contacts */
 .contacts {
-  display: flex;
-  margin-left: auto;
-  margin-bottom: 0px;
+  @include for-size(tablet-landscape) {
+    display: block;
+    margin-top: 0;
+    margin-left: auto;
+    text-align: start;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 
 .contacts .link {

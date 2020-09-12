@@ -2,10 +2,25 @@
 .btn-phone {
   @include flex-direct;
   transition: color $time-anim, fill $time-anim;
+  text-align: start;
+  justify-content: flex-start;
+}
+
+.btn-mail {
+  @include for-size(tablet-landscape) {
+    margin-bottom: 10px;
+  }
+  @include for-size(desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .button-icon {
-  margin-right: 10px;
+  display: inline-block;
+  margin-right: 8px;
+  @include for-size(desktop) {
+    margin-right: 10px;
+  }
 }
 
 .btn {
