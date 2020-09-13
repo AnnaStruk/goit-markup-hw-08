@@ -37,9 +37,10 @@
     margin-left: 88px;
     display: flex;
     margin-bottom: 0px;
-  }
-  & .item:not(:last-child) {
-    margin-right: 50px;
+
+    & .item:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 

@@ -296,13 +296,6 @@ img {
   display: none;
 }
 
-/*
-@media (min-width: 767px) {
-  .menu-btn {
-    display: none;
-  }
-}
-*/
 @media (min-width: 768px) {
   .page-header .container {
     display: -webkit-box;
@@ -452,7 +445,7 @@ img {
     display: flex;
     margin-bottom: 0px;
   }
-  .item:not(:last-child) {
+  .site-nav .item:not(:last-child) {
     margin-right: 50px;
   }
 }
