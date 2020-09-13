@@ -13,17 +13,23 @@
     <link rel="stylesheet" href="./sass/utils/_fonts.scss" />
   </head>
 
-  <body>
+  <body class="modal-open">
     <!--Site header-->
     <header class="page-header">
       <div class="container">
         <a href="./index.html" class="logo"
           ><span class="logo-web">Web</span>Studio</a
         >
-        <button class="menu-btn" data-menu-button>
+        <button
+          class="menu-btn is-open"
+          type="button"
+          aria-expanded="false"
+          aria-controls="menu-container"
+          data-menu-button
+        >
           <svg class="" width="24" height="16" aria-label="mobile menu switch">
-            <use class="icon-open" href="./image/icon-burger"></use>
-            <use class="icon-close" href="./#icon-close"></use>
+            <use class="icon-open" href="./images/sprite.svg#icon-burger"></use>
+            <use class="icon-close" href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <div class="menu-container" id="menu-container" data-menu>
@@ -538,6 +544,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

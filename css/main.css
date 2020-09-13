@@ -73,6 +73,11 @@ body {
   background-color: #ffffff;
 }
 
+/*
+body.modal-open {
+  overflow: hidden;
+}
+*/
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -229,6 +234,95 @@ img {
   color: #ffffff;
 }
 
+@media (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .menu-container {
+    display: none;
+    position: absolute;
+    padding: 60px 0px;
+    top: 100%;
+    right: 0;
+    max-width: 767px;
+    width: 100%;
+    height: 393px;
+    font-size: 18px;
+    line-height: 1.16;
+    text-align: center;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  }
+  .menu-container.is-open {
+    display: block;
+  }
+}
+
+.menu-btn {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-btn:hover, .menu-btn:focus {
+  fill: #2196f3;
+}
+
+.menu-btn .icon-close {
+  display: none;
+}
+
+.menu-btn.is-open .icon-close {
+  display: block;
+}
+
+.menu-btn.is-open .icon-open {
+  display: none;
+}
+
+/*
+@media (min-width: 767px) {
+  .menu-btn {
+    display: none;
+  }
+}
+*/
+@media (min-width: 768px) {
+  .page-header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu-btn {
+    display: none;
+  }
+  .main-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .btn-mail,
 .btn-phone {
   display: -webkit-box;
@@ -302,40 +396,22 @@ img {
   padding: 10px 32px;
 }
 
-.menu-container {
-  display: none;
-}
-
-@media (min-width: 768px) {
-  .menu-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-@media (min-width: 768px) {
+@media (max-width: 767px) {
   .page-header .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    min-height: 63px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
   }
-  .menu-btn {
-    display: none;
-  }
-  .main-nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0;
+  .page-header {
+    position: relative;
+    border-bottom: 1px solid #ececec;
   }
 }
 
@@ -536,7 +612,7 @@ img {
   .hero {
     margin-left: auto;
     margin-right: auto;
-    width: 1600px;
+    max-width: 1600px;
     width: 100%;
     height: 600px;
     padding-top: 200px;
@@ -859,7 +935,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 100;
   overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -867,7 +942,6 @@ img {
 }
 
 .backdrop.is-hidden {
-  visibility: hidden;
   opacity: 0;
   pointer-events: none;
 }
@@ -884,7 +958,6 @@ img {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   padding: 40px 40px;
-  height: 609px;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -896,12 +969,11 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (min-width: 480px) {
+@media (max-width: 1199px) {
   .modal {
     width: 100%;
     max-width: 450px;
-    padding: 40px;
-    margin: 15px;
+    height: 609px;
   }
 }
 
