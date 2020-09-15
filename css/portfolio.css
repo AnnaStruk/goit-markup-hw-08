@@ -637,6 +637,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .features-item {
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .features-list {
     display: -webkit-box;
@@ -996,13 +1002,13 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
   .footer-info,
   .footer-join-us {
     margin-bottom: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 231px;
   }
   .footer-sign-up {
     -webkit-box-align: center;

@@ -712,6 +712,12 @@ img {
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .features-item {
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .features-list {
     display: -webkit-box;
@@ -844,8 +850,6 @@ img {
 .team .item {
   display: inline-block;
   max-width: 100%;
-  width: 450px;
-  height: 622px;
   border: 1px;
   border-radius: 0px 0px 4px 4px;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -853,8 +857,10 @@ img {
   background-color: #ffffff;
 }
 
-.team .item:not(:last-child) {
-  margin-bottom: 30px;
+@media (max-width: 767px) {
+  .team .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -865,38 +871,20 @@ img {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
   .team .item {
-    margin-right: 30px;
-    width: 354px;
-    height: 536px;
+    margin: 15px;
   }
-  .team .item:nth-child(n + 2) {
-    margin-bottom: 0;
-  }
-  .team .item:nth-child(4) {
-    margin-bottom: 0;
-  }
-  .team .item:nth-child(2n) {
-    margin-right: 0;
-  }
-  .item .team-img-adaptive {
-    width: 354px;
-    height: 374px;
+  .team-bg .team {
+    margin: -15px;
   }
 }
 
 @media (min-width: 1200px) {
-  .team .item {
-    width: 270px;
-    height: 428px;
-  }
   .team .item:not(:last-child) {
     margin-right: 30px;
-    margin-bottom: 0;
-  }
-  .team .team-img-adaptive {
-    width: 270px;
-    height: 260px;
   }
 }
 
@@ -959,7 +947,13 @@ img {
   border-color: #2196f3;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
+  .customers-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .customers-item:nth-child(2n + 1) {
     margin-right: 30px;
   }
@@ -1324,13 +1318,13 @@ textarea:focus {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    text-align: left;
   }
   .footer-info,
   .footer-join-us {
     margin-bottom: 0;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 231px;
   }
   .footer-sign-up {
     -webkit-box-align: center;

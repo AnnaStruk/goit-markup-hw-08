@@ -18,6 +18,12 @@
   margin-bottom: 30px;
 }
 
+@media (max-width: 767px) {
+  .features-item {
+    text-align: center;
+  }
+}
+
 @media (min-width: 768px) {
   .features-list {
     display: flex;
